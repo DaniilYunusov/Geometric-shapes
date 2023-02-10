@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../../../css_files/styles.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.semester_work_2.HelloController">
+   <children>
+      <Canvas fx:id="painting_canvas" height="401.0" width="374.0" />
+      <VBox prefHeight="400.0" prefWidth="227.0" spacing="10.0">
+         <children>
+            <Button fx:id="add_figure" mnemonicParsing="false" prefHeight="16.0" prefWidth="232.0" text="Добавить фигуру">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin></Button>
+            <Button fx:id="save_file" mnemonicParsing="false" prefHeight="11.0" prefWidth="230.0" text="Сохранить файл" />
+            <Button fx:id="upload_file" mnemonicParsing="false" prefHeight="33.0" prefWidth="227.0" text="Загрузить файл" />
+            <Button fx:id="save_image" mnemonicParsing="false" prefHeight="37.0" prefWidth="226.0" text="Сохранить изображение" />
+            <Button fx:id="move_figure" mnemonicParsing="false" prefHeight="37.0" prefWidth="227.0" text="Переместить фигуру" />
+            <Button fx:id="delete_figure" mnemonicParsing="false" prefHeight="33.0" prefWidth="226.0" text="Удалить фигуру" />
+            <Button fx:id="clear" mnemonicParsing="false" prefHeight="32.0" prefWidth="225.0" text="Очистить" />
+            <Button fx:id="square_figure" mnemonicParsing="false" prefHeight="29.0" prefWidth="226.0" text="Площадь фигуры" />
+            <Button fx:id="figure_perimeter" mnemonicParsing="false" prefHeight="6.0" prefWidth="237.0" text="Периметр фигуры" />
+            <Button fx:id="intersection_figures" mnemonicParsing="false" prefHeight="6.0" prefWidth="235.0" text="Пересечение фигур" />
+            <HBox fx:id="hbox_output_values" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Text fx:id="output_information_about_figure" strokeType="OUTSIDE" strokeWidth="0.0" text="Пересечение:" wrappingWidth="85.40863037109375">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </Text>
+                  <TextField fx:id="information_output_field">
+                     <padding>
+                        <Insets bottom="5.0" />
+                     </padding>
+                  </TextField>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>

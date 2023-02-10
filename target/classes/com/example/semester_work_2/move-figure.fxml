@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../../../css_files/styles.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.semester_work_2.Move_Figure_Controller">
+   <children>
+      <SplitMenuButton fx:id="move_split_menu_button_figure" layoutX="42.0" layoutY="44.0" mnemonicParsing="false" text="Фигура" />
+      <Button fx:id="move_movement" layoutX="228.0" layoutY="44.0" mnemonicParsing="false" text="Переместить" />
+      <Button fx:id="move_cancel" layoutX="466.0" layoutY="44.0" mnemonicParsing="false" text="Отмена" />
+      <SplitMenuButton fx:id="move_split_menu_button_type_movement" layoutX="42.0" layoutY="110.0" mnemonicParsing="false" text="Тип перемещения">
+        <items>
+          <MenuItem fx:id="move_shift" mnemonicParsing="false" text="Сдвиг" />
+          <MenuItem fx:id="move_rotation" mnemonicParsing="false" text="Поворот" />
+            <MenuItem fx:id="move_symmetry" mnemonicParsing="false" text="Симметрия" />
+        </items>
+      </SplitMenuButton>
+      <VBox fx:id="move_vbox" layoutX="42.0" layoutY="151.0" prefHeight="252.0" prefWidth="494.0" />
+   </children>
+</AnchorPane>

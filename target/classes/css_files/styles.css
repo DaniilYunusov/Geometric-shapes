@@ -1,0 +1,10 @@
+.button {
+    /*box-shadow: 0 8px 65px -5px #CD106E;*/
+    /*-fx-color-label-visible: #CD106E;*/
+    /*-fx-color:red;*/
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+
+.split-menu-button {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
